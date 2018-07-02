@@ -25,6 +25,18 @@ h4 {
 	z-index: 99999;
 }
 
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-menu-show {
+	display: block;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+}
+
 .jumbotron {
 	background: url('img/CliffsEdge.jpg');
 	background-repeat: no-repeat;

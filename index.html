@@ -10,12 +10,12 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark">
 	  <a class="navbar-brand" href="#">Kraig Kowalski</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	    </ul>
+	  	<!-- Moves navbar elements to the right -->
+	    <ul class="navbar-nav mr-auto"></ul>
 	    <ul class="navbar-nav">
 	      <li class="nav-item active">
 	        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
@@ -25,6 +25,16 @@
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	      	<!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	      		Dropdown
+	      	</a> -->
+	      	<div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	      		<a class="dropdown-item" href="#about">About</a>
+	      		<a class="dropdown-item" href="#portfolio">Portfolio</a>
+	      		<a class="dropdown-item" href="#contact">Contact</a>
+	      	</div>
 	      </li>
 	    </ul>
 	  </div>
@@ -44,7 +54,7 @@
 			<h2>About</h2>
 			<p>At my core I am an entrepreneur by heart and being able to create beautiful and functional websites has helped with fulfilling the ambition and drive that I have. In addition to my entrepreneurial spirit I also enjoy travelling the world to experience different cultures and have also been known to enjoy a good bourbon and cigar every once in a while.</p>
 
-			<p>I am an alumnus of the <a href="www.sc.edu/" target="_blank">University of South Carolina</a>, graduating with a Bachelors of Science with a major in Finance. Originally from West Palm Beach, FL but grew up in Myrtle Beach, SC and currently residing in Jacksonville, FL. Making the change from finance to IT over 2 years ago was one of the best decisions I've made and I'm thankful I get to do something that I love.</p>
+			<p>I am an alumnus of the <a href="https://www.sc.edu/" target="_blank">University of South Carolina</a>, graduating with a Bachelors of Science with a major in Finance. Originally from West Palm Beach, FL but grew up in Myrtle Beach, SC and currently residing in Jacksonville, FL. Making the change from finance to IT over 2 years ago was one of the best decisions I've made and I'm thankful I get to do something that I love.</p>
 
 			<p>I want to be involved in projects that I can be proud of, work with amazing teams and advance my skills both on the front-end as well as the back-end. I'm looking to grow both personally and professionally anywhere in the world. Take some time to look over my portfolio, resume and if you're interested in working together then <a href="#contact">let's get in touch</a>!</p>
 		</div>
@@ -104,8 +114,11 @@
 	</div>
 	</div>
 
-
-
-
+<script 
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+ 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ 	crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="assets/js/portfolio.js"></script>
 </body>
 </html>
