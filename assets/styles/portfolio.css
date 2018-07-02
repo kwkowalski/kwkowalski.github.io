@@ -1,3 +1,177 @@
 body {
-	background-color: red;
+	font-family: 'Roboto Slab', serif;
+}
+
+.jumbotron h1 {
+	font-weight: 700;
+	font-size: 4em;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h4 {
+	text-transform: uppercase;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	background-color: #0d2b3e;
+}
+
+.jumbotron {
+	background: url('img/cliffsedge.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 1200px;
+	color: white;
+}
+
+#header {
+	padding-top: 3em;
+	text-align: center;
+}
+
+#about {
+	min-height: 800px;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	margin-top: -35px;
+	width: 100%;
+	text-align: justify;
+	line-height: 2em;
+	background-color: #F2F4F5;
+}
+
+#about p {
+	margin: 2em 0;
+}
+
+#about .container{
+	max-width: 800px;
+}
+
+#portfolio {
+	min-height: 600px;
+	padding-bottom: 5em;
+	padding-top: 5em;
+	background: #B6BFC5;
+}
+
+#contact {
+	height: 400px;
+	padding-top: 5em;
+	background-color: #F2F4F5;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10px;
+}
+
+.col-sm {
+	flex: 33%;
+	max-width: 33%;
+	padding: 0 10px;
+	position: relative;
+	height: 200px;
+	margin-top: 2em;
+}
+
+.col-sm img {
+	vertical-align: middle;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.col-sm img:hover {
+	box-shadow: 5px 5px 10px grey;
+}
+
+#contact .container:first-of-type {
+	text-transform: uppercase;
+}
+
+#contact .container:first-of-type p {
+	font-size: 0.75em;
+	text-align: center;
+}
+
+/*#contact div:first-of-type{
+	background-color: rgb(230, 230, 230);
+	display: inline-block;
+}*/
+
+#contact div:nth-of-type(2) {
+	display: inline-block;
+	margin-top: 40px;
+	text-align: justify;
+}
+
+.fab {
+	font-size: 2em;
+	margin-right: 10px;
+}
+
+.fa-linkedin {
+	color: #0077B5;
+}
+
+.fa-linkedin:hover {
+	color: #0077B5;
+	transform: skew(-10deg);
+	transition-duration: 0.5s;
+}
+
+.fa-facebook-square {
+	color: #3B5998;
+}
+
+.fa-facebook-square:hover {
+	color: #3B5998;
+	transform: skew(-10deg);
+	transition-duration: 0.5s;
+}
+
+.fa-github {
+	color: #333333;
+}
+
+.fa-github:hover {
+	color: #333333;
+	transform: skew(-10deg);
+	transition-duration: 0.5s;
+}
+
+#footer {
+	text-align: right;
+	padding: 20px 10px;
+	background-color: #0d2b3e;
+	color: white;
+}
+
+/* Adjust size of squares based on screen resolution */
+@media screen and (max-width: 1000px) {
+	.col-sm {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col-sm {
+		flex: 100%;
+		max-width: 100%;
+	}
 }
