@@ -88,7 +88,6 @@ h4 {
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 10px;
 }
 
 .col-sm {
@@ -108,9 +107,40 @@ h4 {
 	border-radius: 10px;
 }
 
-.col-sm img:hover {
-	box-shadow: 5px 5px 10px grey;
+.col-sm .after {
+	position: absolute;
+	top: 0;
+	left: 9px;
+	width: 95%;
+	height: 100%;
+	padding: 0 25px;
+	border-radius: 10px;
+	display: none;
+	color: #FFF;
 }
+
+.col-sm:hover .after {
+	display: block;
+	background: rgba(0, 0, 0, .5);
+}
+
+.shadow img {
+transition: .5s ease;
+}
+
+.shadow img:hover{
+box-shadow:
+1px 1px 2px grey,
+2px 2px 4px grey,
+3px 3px 6px grey,
+4px 4px 8px grey,
+5px 5px 10px grey;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+}
+
+
 
 #contact .container:first-of-type {
 	text-transform: uppercase;
