@@ -1,7 +1,9 @@
+/* FONT USED */
 body {
 	font-family: 'Roboto Slab', serif;
 }
 
+/* FONTS STYLED */
 .jumbotron h1 {
 	font-weight: 700;
 	font-size: 4em;
@@ -18,6 +20,7 @@ h4 {
 	text-transform: uppercase;
 }
 
+/* STYLE NAVBAR/DROPDOWN */
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -37,6 +40,7 @@ h4 {
 	overflow: auto;
 }
 
+/* STYLE PICTURE/INTRO */
 .jumbotron {
 	background: url('img/CliffsEdge.jpg');
 	background-repeat: no-repeat;
@@ -52,6 +56,7 @@ h4 {
 	text-align: center;
 }
 
+/* STYLE ABOUT SECTION */
 #about {
 	min-height: 800px;
 	padding-top: 5em;
@@ -71,18 +76,12 @@ h4 {
 	max-width: 800px;
 }
 
+/* STYLE PORTFOLI PROJECT GRID */
 #portfolio {
 	min-height: 600px;
 	padding-bottom: 5em;
 	padding-top: 5em;
 	background: #B6BFC5;
-}
-
-#contact {
-	height: 400px;
-	padding-top: 5em;
-	background-color: #F2F4F5;
-	text-align: center;
 }
 
 .row {
@@ -107,6 +106,7 @@ h4 {
 	border-radius: 10px;
 }
 
+/* ADD SHADOW EFFECT UNDER PORTFOLIO PROJECTS */
 .raiseCard img {
 	transition: .5s ease;
 }
@@ -123,6 +123,29 @@ h4 {
 	transition: .5s ease;
 }
 
+/* ADJUST SIZE OF PROJECT GRID BASED ON SCREEN RESOLUTION */
+@media screen and (max-width: 1000px) {
+	.col-sm {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col-sm {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+/* STYLE CONTACT INTRO */
+#contact {
+	height: 400px;
+	padding-top: 5em;
+	background-color: #F2F4F5;
+	text-align: center;
+}
+
 #contact .container:first-of-type {
 	text-transform: uppercase;
 }
@@ -133,11 +156,7 @@ h4 {
 	padding-bottom: 10px;
 }
 
-/*#contact div:first-of-type{
-	background-color: rgb(230, 230, 230);
-	display: inline-block;
-}*/
-
+/* HORIZONTAL ROW */
 hr {
 	width: 75%;
     border: 0;
@@ -145,10 +164,18 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+/* LINE UP CONTACT INFO */
 #contact div:nth-of-type(2) {
 	display: inline-block;
-	margin-top: 10px;
 	text-align: justify;
+}
+ #contact.contact {
+ 	margin-top: 10px;
+ }
+
+/* STYLE SOCIAL MEDIA ICONS */
+.icons {
+	float: left;
 }
 
 .fab {
@@ -186,24 +213,10 @@ hr {
 	transition-duration: 0.5s;
 }
 
+/* STYLE FOOTER */
 #footer {
 	text-align: right;
 	padding: 20px 10px;
 	background-color: #0d2b3e;
 	color: white;
-}
-
-/* Adjust size of squares based on screen resolution */
-@media screen and (max-width: 1000px) {
-	.col-sm {
-		flex: 50%;
-		max-width: 50%;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.col-sm {
-		flex: 100%;
-		max-width: 100%;
-	}
 }
