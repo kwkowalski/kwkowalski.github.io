@@ -107,11 +107,11 @@ h4 {
 	border-radius: 10px;
 }
 
-.shadow img {
+.raiseCard img {
 	transition: .5s ease;
 }
 
-.shadow img:hover{
+.raiseCard img:hover{
 	box-shadow:
 	1px 1px 2px grey,
 	2px 2px 4px grey,
