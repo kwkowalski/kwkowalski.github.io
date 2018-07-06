@@ -21,6 +21,12 @@ h4 {
 	text-transform: uppercase;
 }
 
+/* LOGO */
+#logo {
+	height: 40px;
+	width: 35px;
+}
+
 /* STYLE NAVBAR/DROPDOWN */
 .navbar {
 	position: fixed;
