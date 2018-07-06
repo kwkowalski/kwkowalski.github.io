@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 	<nav class="navbar navbar-expand-lg navbar-dark">
 	  <a class="navbar-brand" href="#">Kraig Kowalski</a>
 	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,20 +65,45 @@
 		<h2>Portfolio</h2>
 		<div class="container" id="grid">
 		  <div class="row">
-		    <div class="col-sm">
+		    <div class="col-sm">	    	
+		    	<img src="assets/styles/img/ColorGame.jpg" alt="Color Guessing Game">
 		    	<a href="https://kwkowalski.github.io/color-guessing-game/" target="_blank" id="colorGame" class="raiseCard">
-		      		<img src="assets/styles/img/ColorGame.jpg" alt="Color Guessing Game">
-		      	</a>
+			    	<div class="overlay">
+			    		<p class="text">Color Guessing Game</p>
+			    		<ul class="subText">
+			    			<li>HTML5</li>
+			    			<li>CSS3</li>
+			    			<li>JavaScript</li>
+			    		</ul>
+			    	</div>
+		    	</a>
 		    </div>
 		    <div class="col-sm">
+		    	<img src="assets/styles/img/TodoList.jpg" alt="Todo List Application">
 		    	<a href="https://kwkowalski.github.io/todo-application" target="_blank" id="todoList" class="raiseCard">
-		      		<img src="assets/styles/img/TodoList.jpg" alt="Todo List Application">
+			    	<div class="overlay">
+			    		<p class="text">Todo List</p>
+			    		<ul class="subText">
+			    			<li>HTML5</li>
+			    			<li>CSS3</li>
+			    			<li>jQuery</li>
+			    		</ul>
+			      	</div>
 		      	</a>
 		    </div>
 		    <div class="col-sm">
+		    	<img src="assets/styles/img/PatatapClone.jpg" alt="Patatap Clone">
 		    	<a href="https://kwkowalski.github.io/patatap-clone" target="_blank" id="patatap" class="raiseCard">
-		      		<img src="assets/styles/img/PatatapClone.jpg" alt="Patatap Clone">
-		      	</a>
+			    	<div class="overlay">
+			    		<p class="text">Patatap</p>
+			    		<ul class="subText">
+			    			<li>HTML5</li>
+			    			<li>CSS3</li>
+			    			<li>Paper.js/Howler.js</li>
+			    			<li>*Turn up volume and hit those keys!*</li>
+			    		</ul>
+			    	</div>
+		    	</a>	
 		    </div>
 		  </div>
 		</div>
@@ -86,7 +111,7 @@
 
 	<div class="container-fluid" id="contact">
 		<div>
-			<div class="container">
+			<div class="container contact">
 				<a name="contact"></a>
 				<h2>Get in touch!</h2>
 				<p>Currently available for long-term contract or full time work,
